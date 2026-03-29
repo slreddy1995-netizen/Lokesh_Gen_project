@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import ollama
 
+
+git remote add origin https://github.com/slreddy1995-netizen/Lokesh_Gen_project.git
+
 # ================= CLEAN FUNCTION =================
 def clean_invoice_data(df):
 
