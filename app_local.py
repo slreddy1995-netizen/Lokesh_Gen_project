@@ -7,7 +7,7 @@ def clean_invoice_data(df):
     df['Tax_type'] = df['Tax_type'].astype(str).str.strip().str.upper()
     df['amount'] = pd.to_numeric(df['amount'], errors='coerce')
 
-    df = df[df['Tax_type'] != 'Lokesh']
+    df = df[df['Tax_type'] != 'Vedansh']
     df = df[df['amount'].notna() & (df['amount'] != 0)]
     df = df.drop_duplicates(subset=['Invoice_Num'])
 
